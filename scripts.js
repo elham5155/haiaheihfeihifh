@@ -10,13 +10,22 @@ function startMining() {
 
     setInterval(function () {
         count += miningRate;
-        document.getElementById('mining-count').textContent = count.toFixed(4);
+        document.getElementById('coins-count').textContent = `Coins: ${count.toFixed(4)}`;
     }, 1000);
 
-    gsap.to('#logo img', {
+    gsap.to('#logo', {
         rotation: 360,
         duration: 2,
         repeat: -1,
         ease: 'linear'
     });
 }
+
+// Navigation to other pages
+document.getElementById('tasks-button').addEventListener('click', function () {
+    window.location.href = 'tasks.html';
+});
+
+document.getElementById('wallet-button').addEventListener('click', function () {
+    window.location.href = 'wallet.html';
+});
