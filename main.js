@@ -1,7 +1,7 @@
 let minedCoins = 0.0001;  // Initial amount of mined coins
 let miningInterval;
 const totalCoins = 1000;
-const miningDuration = 3600000; // 1 hour in milliseconds
+const miningDuration = 360000; // 1 hour in milliseconds
 const incrementAmount = totalCoins / miningDuration * 10; // Increment amount every 10 milliseconds
 
 function startMining() {
@@ -29,7 +29,7 @@ function navigateTo(page) {
 document.addEventListener('DOMContentLoaded', function() {
     // Load animated logo dynamically
     const logoElement = document.getElementById('logo');
-    logoElement.style.backgroundImage = 'url("logo-motion.gif")'; // Replace with your motion logo image
+    logoElement.style.backgroundImage = 'url("logo.png")'; // Replace with your motion logo image
     logoElement.style.backgroundSize = 'contain';
     logoElement.style.backgroundRepeat = 'no-repeat';
     logoElement.style.backgroundPosition = 'center';
