@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #283048, #859398);
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center;
+}
+
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background-motion.gif') no-repeat center center/cover;
+    z-index: -1;
+}
+
+.main-container {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    width: 90%;
+}
+
+.mining-amount {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    margin: 20px;
+    cursor: pointer;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.start-mining {
+    background: none;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    margin-bottom: 20px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.start-mining:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000;
+    transform: scale(1.1);
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0.7;
+}
+
+.icon-button:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.icon-button img {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
+}
