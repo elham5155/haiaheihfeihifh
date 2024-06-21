@@ -27,9 +27,9 @@ function navigateTo(page) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Load logo dynamically
+    // Load animated logo dynamically
     const logoElement = document.getElementById('logo');
-    logoElement.style.backgroundImage = 'url("logo.png")';
+    logoElement.style.backgroundImage = 'url("logo-motion.gif")'; // Replace with your motion logo image
     logoElement.style.backgroundSize = 'contain';
     logoElement.style.backgroundRepeat = 'no-repeat';
     logoElement.style.backgroundPosition = 'center';
