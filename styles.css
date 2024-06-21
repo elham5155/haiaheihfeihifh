@@ -19,7 +19,7 @@ body {
 }
 
 #coins-count {
-    font-size: 2em;
+    font-size: 0.1em;
     margin-top: 20px;
     position: absolute;
     top: 10px;
@@ -39,7 +39,7 @@ body {
 
 #logo {
     width: 150px;
-    height: 150px;
+    height: 155px;
     animation: spin 10s linear infinite;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
 }
@@ -50,8 +50,8 @@ body {
 }
 
 #start-button {
-    padding: 10px 20px;
-    font-size: 1.2em;
+    padding: 1px 2px;
+    font-size:0.2em;
     margin-top: 20px;
     display: inline-block;
     background: rgba(255, 255, 255, 0.2);
@@ -64,7 +64,7 @@ body {
 
 #start-button:hover {
     background: rgba(255, 255, 255, 0.4);
-    transform: scale(1.1);
+    transform: scale(0.1.0.1);
 }
 
 .bottom-buttons {
